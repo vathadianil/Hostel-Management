@@ -1,0 +1,292 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--backgroundColor);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--backgroundColor);
+  background-clip: border-box;
+  border: 0.0625rem solid var(--borderColor);
+  border-radius: 0.55rem;
+  margin-inline: 1.5em;
+}
+
+.bg-primary {
+  background-color: var(--backgroundColor) !important;
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+.shadow-soft {
+  box-shadow: 6px 6px 12px var(--boxShadowDark),
+    -6px -6px 12px var(--boxShadowLight) !important;
+}
+
+.border-light {
+  border-color: var(--borderLight) !important;
+}
+
+.card-header {
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.h4 {
+  margin-top: 1em;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.logo-container {
+  width: 10rem;
+  height: 10rem;
+  box-shadow: inset 2px 2px 5px var(--boxShadowDark),
+    inset -3px -3px 7px var(--boxShadowLight) !important;
+  transition: all 0.2s ease;
+  margin-inline: auto;
+  padding: 1rem !important;
+  border: 0.0625rem solid var(--borderLight) !important;
+  border-radius: 50% !important;
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(0.55rem - 0.0625rem);
+  border-top-right-radius: calc(0.55rem - 0.0625rem);
+  padding: 1rem !important;
+  border-radius: 50% !important;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.5rem;
+}
+
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.input-group {
+  box-shadow: inset 2px 2px 5px var(--boxShadowDark),
+    inset -3px -3px 7px var(--boxShadowLight);
+  border-radius: 0.55rem;
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem !important;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-group-prepend {
+  margin-right: -0.0625rem;
+  display: flex;
+}
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--blue400);
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--backgroundColor);
+  border: 0.0625rem solid var(--borderLight);
+  border-radius: 0.55rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease-in-out;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.size-6 {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  width: 20px;
+  height: 20px;
+  color: var(--blue400) !important;
+  stroke-width: 2px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1.2rem + 0.0625rem);
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  background-color: var(--backgroundColor);
+  background-clip: padding-box;
+  border: 0.0625rem solid var(--borderColor);
+  border-radius: 0.55rem;
+  box-shadow: inset 2px 2px 5px var(--boxShadowDark),
+    inset -3px -3px 7px var(--boxShadowLight);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: var(--blue400);
+}
+
+.form-control:focus {
+  outline: 0;
+}
+
+.check-wrapper {
+  margin-bottom: 1.5rem !important;
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+  padding-left: 0;
+}
+
+.form-check input[type="checkbox"],
+.form-check input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0.3rem;
+  margin-left: -1.25rem;
+}
+
+.form-check .form-check-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.375rem;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 0;
+  transition: all 0.2s ease;
+}
+
+.form-check .form-check-label::after,
+.form-check .form-check-label::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 0;
+  background-color: var(--backgroundColor);
+  border: 1px solid var(--borderLight);
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  box-shadow: inset 1px 2px 2px var(--boxShadowDark),
+    inset -5px -2px 4px var(--boxShadowLight);
+}
+
+.form-check .form-check-label::after {
+  content: "\2713";
+  top: 0;
+  text-align: center;
+  opacity: 0;
+  color: var(--blue400);
+  font-weight: 900;
+  border: 0;
+}
+
+.form-check input[type="checkbox"]:checked + .form-check-label::after {
+  background-color: var(--backgroundColor);
+  opacity: 1;
+  font-size: 0.6rem;
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.btn-primary {
+  color: var(--blue400);
+  background-color: var(--backgroundColor);
+}
+
+.btn {
+  position: relative;
+  transition: all 0.2s ease;
+  letter-spacing: 0.025em;
+  font-size: 1rem;
+  border-color: var(--borderLight);
+  box-shadow: 3px 3px 6px var(--boxShadowDark),
+    -3px -3px 6px var(--boxShadowLight);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 0.0625rem solid transparent;
+  padding: 0.55rem 0.95rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.55rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-weight: bold;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  box-shadow: inset 2px 2px 5px var(--boxShadowDark),
+    inset -3px -3px 7px var(--boxShadowLight);
+}
